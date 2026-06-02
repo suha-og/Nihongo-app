@@ -1,65 +1,39 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from 'next/link';
+import styles from './page.module.css';
 
-export default function Home() {
+export default function LandingPage() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className={styles.landingContainer}>
+      {/* Navbar Section */}
+      <nav className={styles.navbar}>
+        <div className={styles.logo}>
+          <span>🌸</span> Nihongo App
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        
+        <div className={styles.navLinks}>
+          <span className={styles.navItem}>Features</span>
+          <span className={styles.navItem}>About</span>
+          <span className={styles.navItem}>Contact</span>
         </div>
+
+        <div>
+          <Link href="/signup" className={styles.primaryButton}>
+            Start Your Journey →
+          </Link>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <main className={styles.hero}>
+        <h1 className={styles.title}>Where Calm Meets<br/>Learning.</h1>
+        <p className={styles.subtitle}>
+          In the rush of life, imagine a space that feels like a deep breath. 
+          Here, you can master Japanese characters at your own pace in a private digital sanctuary.
+        </p>
+        
+        <Link href="/signup" className={styles.primaryButton}>
+          Start Your Journey →
+        </Link>
       </main>
     </div>
   );

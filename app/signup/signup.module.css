@@ -1,0 +1,79 @@
+.container {
+  min-height: 100vh;
+  background-color: #FDF2F8; /* Soft pink background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.formCard {
+  background-color: #ffffff;
+  padding: 3rem;
+  border: 2px solid #FBCFE8; /* Lighter pink border */
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(251, 207, 232, 0.3);
+}
+
+.title {
+  color: #4A3B32; /* Soft dark brown */
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.inputGroup {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  color: #8B5E3C;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.input {
+  background-color: #FFF9FB;
+  color: #4A3B32;
+  border: 2px solid #FCE7F3;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  outline: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.input:focus {
+  border-color: #FF7B89; /* Coral pink accent */
+}
+
+.button {
+  width: 100%;
+  background-color: #FF7B89;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #FF6273;
+  transform: translateY(-2px);
+}
+
+.message {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
