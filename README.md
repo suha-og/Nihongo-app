@@ -1,3 +1,28 @@
+🖌️ Nihongo
+
+Nihongo is a handwriting-focused language-learning platform designed to help learners build muscle memory through interactive writing practice. Unlike traditional language-learning applications that focus primarily on vocabulary and recognition, Nihongo provides a dedicated environment for mastering the physical act of writing.
+
+✨ Features
+🇯🇵 Japanese Hiragana Practice
+Complete interactive Hiragana character grid
+Character-by-character writing practice
+Stroke-order guidance with numbered indicators
+HTML5 canvas for real-time handwriting practice
+
+🎨 Interactive Writing Canvas
+Smooth handwriting experience
+Dynamic stroke-order visualization
+Focused, distraction-free practice interface
+
+🛠️ Tech Stack
+Frontend: Next.js, React
+Styling: CSS Modules
+Backend: Next.js API Routes
+Database: MongoDB
+Authentication: Secure password hashing and user authentication
+Version Control: Git & GitHub
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
